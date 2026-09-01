@@ -1,4 +1,5 @@
 require 'core.keymaps'
+require 'core.options'
 
 -- faster startup for nvim
 vim.loader.enable()
@@ -32,6 +33,7 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
   spec = {
     -- add your plugins here
+    require 'plugins.filetree',
     require 'plugins.colortheme'
   },
   -- Configure any other settings here. See the documentation for more details.
