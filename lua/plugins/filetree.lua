@@ -2,6 +2,23 @@ return {
   {
     "nvim-neo-tree/neo-tree.nvim",
     branch = "v3.x",
+    opts = {
+        filesystem = {
+            filtered_items = {
+                visible = false, --hide filtered items on open
+                hide_gitignored = true,
+                hide_dotfiles = false,
+                hide_ignored = true, -- hide files that are ignored by other gitignore-like files
+                ignore_files = {
+                    ".github",
+                    "package-lock.json"
+                },
+                never_show = {
+                    ".git"
+                },
+            },
+        },
+    },
     dependencies = {
       "nvim-lua/plenary.nvim",
       "MunifTanjim/nui.nvim",
