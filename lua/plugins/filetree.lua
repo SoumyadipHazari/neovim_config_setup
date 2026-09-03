@@ -6,7 +6,7 @@ return {
         filesystem = {
             filtered_items = {
                 visible = false, --hide filtered items on open
-                hide_gitignored = true,
+                hide_gitignored = false,
                 hide_dotfiles = false,
                 hide_ignored = true, -- hide files that are ignored by other gitignore-like files
                 ignore_files = {
@@ -32,7 +32,23 @@ return {
       "nvim-neo-tree/neo-tree.nvim", -- makes sure that this loads after Neo-tree.
     },
     config = function()
-      require("nvim-file-operations").setup()
+      require("nvim-file-operations").setup({
+        window = {
+            mappings = {
+                ["P"] = {
+                    "toggle_preview",
+                    config = {
+                        use_float = false,
+                        use_snacks_image = true,
+                        use_image_nvim = true
+                    }
+                },
+                ["l"] = "focus_preview",
+                ["<C-b>"] = {"scroll_preview", config = {direction = 10}},
+                ["<C-f>"] = {"scroll_preview", config = {direction = -10}},
+            }
+        }
+    })
     end,
   },
   {
