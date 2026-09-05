@@ -1,4 +1,4 @@
-- :edit (:e) -- used for opening a file to edit in an active vim session.
+-:edit (:e) -- used for opening a file to edit in an active vim session.
 
 # Buffers 
 
