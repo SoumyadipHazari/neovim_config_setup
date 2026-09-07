@@ -37,7 +37,9 @@ require("lazy").setup({
     require 'plugins.colortheme',
     require 'plugins.key',
     require 'plugins.discord',
-    require 'plugins.tree'
+    require 'plugins.tree',
+    require 'plugins.flash',
+    require 'plugins.lsp'
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
