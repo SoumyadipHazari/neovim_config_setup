@@ -15,7 +15,7 @@ vim.keymap.set('n', '<C-u>', '<C-u>zz', opts)
 vim.keymap.set('n', 'n', 'nzzzv')
 vim.keymap.set('n', 'N', 'Nzzzv')
 
--- resize with the arrows
+-- resize with the h,j,k,l
 vim.keymap.set('n', '<S-h>', ':resize -2<CR>', opts)
 --vim.keymap.set('n', '<S-k>', ':resize +2<CR>', opts)
 --vim.keymap.set('n', '<S-j>', ':vertical resize -2<CR>', opts)
