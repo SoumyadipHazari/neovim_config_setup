@@ -56,3 +56,21 @@ ZQ -- shortcut for quit and discard changes
 :x -- save (if changed) and quit
 
 ZZ -- save if changed and quit
+
+---
+
+# flash plugin shortcut
+
+s -- Flash jump (mode -- normal, visual and operator-pending)
+S -- Flash treesitter (mode -- normal, visual and operator-pending)
+f -- forward flash search (mode -- normal, visual and operator-pending)
+F -- jump to line start (mode -- normal, visual and operator-pending)
+r -- remote flash (operator-pending)
+R -- Treesitter Search (operator-pending, visual)
+ctrl + s -- toggle flash search
+
+# filetree plugin shortcuts
+
+leader + e -- opens filetree in right side
+
+
